@@ -6,6 +6,7 @@
     { "src": "styles.css", "use": "@vercel/static" },
     { "src": "load-products.js", "use": "@vercel/static" },
     { "src": "data/products.yml", "use": "@vercel/static" },
-    { "src": "images/**/*", "use": "@vercel/static" }
+    { "src": "images/**/*", "use": "@vercel/static" },
+    { "src": "videos/**/*", "use": "@vercel/static" }
   ]
 }
