@@ -1,0 +1,35 @@
+products:
+  - id: gear-spinner
+    title: "Gear Spinner"
+    description: "Interlocking gear fidget with smooth mechanical motion."
+    price: 14.99
+    image: "/images/gear-spinner.jpg"
+    category: "fidgets"
+
+  - id: tri-spinner
+    title: "Classic Tri‑Spinner"
+    description: "Balanced, durable tri‑spinner printed for long spin times."
+    price: 9.99
+    image: "/images/printer-fidget.jpg"
+    category: "fidgets"
+
+  - id: spin-chain-set
+    title: "Spin & Chain Set"
+    description: "Metal spinning top paired with a chain‑link fidget toy."
+    price: 19.99
+    image: "/images/spinning-top-chain.jpg"
+    category: "fidgets"
+
+  - id: keychain-multitool
+    title: "Keychain Multi‑Tool"
+    description: "Compact wrench and bottle opener for everyday carry."
+    price: 12.49
+    image: "/images/daily-items.jpg"
+    category: "daily-use"
+
+  - id: desk-stand-cube
+    title: "Desk Stand & Cube Set"
+    description: "Phone stand and tactile cube combo for clean workspaces."
+    price: 16.99
+    image: "/images/daily-items.jpg"
+    category: "daily-use"
