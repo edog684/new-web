@@ -386,4 +386,23 @@ body {
     display: flex;
     justify-content: flex-end;
   }
+
+  .hero-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-logo {
+  width: 320px;
+  filter: drop-shadow(0 0 22px #00c8ff);
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% { filter: drop-shadow(0 0 12px #00c8ff); }
+  50% { filter: drop-shadow(0 0 26px #00c8ff); }
+  100% { filter: drop-shadow(0 0 12px #00c8ff); }
+}
+
 }
