@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FF.inc – Precision 3D Prints</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <script defer src="/load-products.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="logo">FF<span class="accent">.</span>inc</div>
+    <nav class="nav">
+      <a href="#fidgets">Fidgets</a>
+      <a href="#daily">Daily Use</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Precision 3D Prints for Everyday Focus</h1>
+        <p>High‑quality fidgets and daily‑use tools engineered for feel and durability.</p>
+      </div>
+      <div class="hero-grid">
+        <img src="/images/printer-fidget.jpg" />
+        <img src="/images/gear-spinner.jpg" />
+        <img src="/images/daily-items.jpg" />
+        <img src="/images/spinning-top-chain.jpg" />
+      </div>
+    </section>
+
+    <!-- PRODUCTS GENERATED FROM YAML -->
+    <section class="section" id="products">
+      <div class="section-header">
+        <h2>Products</h2>
+        <p>All items are 3D printed with precision and care.</p>
+      </div>
+
+      <div id="product-grid" class="product-grid">
+        <!-- JS will inject product cards here -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2024 FF.inc — Precision 3D Prints for Everyday Focus.</p>
+  </footer>
+</body>
+</html>
