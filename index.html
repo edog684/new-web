@@ -20,12 +20,44 @@
       <a class="nav-btn" href="#faq">FAQ</a>
       <a class="nav-btn" href="#about">About</a>
     </nav>
+    <div class="nav-search">
+      <input id="search-input" type="text" placeholder="Search products..." />
+    </div>
   </header>
 
   <!-- FLOATING CART BUTTON -->
-  <button class="cart-btn">
+  <button class="cart-btn" id="cart-btn">
     🛒
   </button>
+
+  <!-- SIMPLE CART / CHECKOUT PANEL -->
+  <aside class="cart-panel" id="cart-panel">
+    <div class="cart-header">
+      <h2>Cart</h2>
+      <button id="cart-close">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-summary">
+      <div class="cart-total-row">
+        <span>Total:</span>
+        <span id="cart-total">$0.00</span>
+      </div>
+      <details class="shipping-details">
+        <summary>Shipping & Address</summary>
+        <form id="checkout-form">
+          <input type="text" name="name" placeholder="Full name" required />
+          <input type="text" name="address" placeholder="Shipping address" required />
+          <input type="text" name="city" placeholder="City" required />
+          <input type="text" name="postal" placeholder="Postal code" required />
+          <input type="email" name="email" placeholder="Email for confirmation" required />
+          <button type="submit" class="btn primary full-width">Place Order</button>
+        </form>
+      </details>
+      <p class="checkout-note">
+        Payments & shipping are handled in‑house. You’ll receive a confirmation email with tracking details.
+      </p>
+    </div>
+  </aside>
 
   <main>
     <!-- HERO -->
@@ -52,7 +84,7 @@
       <div id="product-grid" class="product-grid"></div>
     </section>
 
-    <!-- CUSTOMER SERVICE -->
+    <!-- CUSTOMER SERVICE (Formspree) -->
     <section class="section" id="customer-service">
       <div class="section-header">
         <h2>Customer Service</h2>
@@ -61,21 +93,30 @@
 
       <div class="service-grid">
         <div class="service-card">
-          <h3>📦 Order Support</h3>
-          <p>Questions about shipping, tracking, or returns? We’ve got you covered.</p>
-          <a href="mailto:support@ff.inc" class="btn primary">Email Support</a>
+          <h3>Contact Support</h3>
+          <p>Use the form to reach our support team. We typically respond within 24 hours.</p>
+
+          <!-- Replace YOUR_FORM_ID with your Formspree form ID -->
+          <form
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+            class="support-form"
+          >
+            <input type="email" name="email" placeholder="Your email" required />
+            <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
+            <button type="submit" class="btn primary full-width">Send Message</button>
+          </form>
         </div>
 
         <div class="service-card">
-          <h3>🛠 Custom Prints</h3>
-          <p>Need a custom fidget or tool? We offer tailored 3D printing services.</p>
-          <a href="mailto:custom@ff.inc" class="btn ghost">Request Custom Work</a>
+          <h3>Custom Prints</h3>
+          <p>Need a custom fidget or tool? Tell us what you’re imagining.</p>
+          <p>Email: <strong>custom@ff.inc</strong></p>
         </div>
 
         <div class="service-card">
-          <h3>❓ FAQ</h3>
-          <p>Find answers to common questions about materials, durability, and care.</p>
-          <a href="#faq" class="btn ghost">View FAQ</a>
+          <h3>Order & Shipping</h3>
+          <p>Orders are processed in‑house with automatic shipping updates sent to your email.</p>
         </div>
       </div>
     </section>
@@ -127,5 +168,6 @@
   </footer>
 </body>
 </html>
+
 
 
