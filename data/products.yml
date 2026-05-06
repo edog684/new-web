@@ -3,68 +3,118 @@ products:
     title: "Gear Spinner"
     description: "Interlocking gear fidget with smooth mechanical motion."
     price: 14.99
-    image: "/images/gear-spinner.jpg"
     category: "fidgets"
+    images:
+      - "/images/gear-spinner.jpg"
+      - "/images/gear-spinner.jpg"
+      - "/images/gear-spinner.jpg"
+    videos:
+      - "/videos/gear-spinner-demo.mp4"
 
   - id: tri-spinner
     title: "Classic Tri‑Spinner"
     description: "Balanced, durable tri‑spinner printed for long spin times."
     price: 9.99
-    image: "/images/printer-fidget.jpg"
     category: "fidgets"
+    images:
+      - "/images/printer-fidget.jpg"
+      - "/images/printer-fidget.jpg"
+      - "/images/printer-fidget.jpg"
+    videos:
+      - "/videos/tri-spinner-demo.mp4"
 
   - id: spin-chain-set
     title: "Spin & Chain Set"
     description: "Metal spinning top paired with a chain‑link fidget toy."
     price: 19.99
-    image: "/images/spinning-top-chain.jpg"
     category: "fidgets"
+    images:
+      - "/images/spinning-top-chain.jpg"
+      - "/images/spinning-top-chain.jpg"
+      - "/images/spinning-top-chain.jpg"
+    videos:
+      - "/videos/spin-chain-demo.mp4"
 
   - id: keychain-multitool
     title: "Keychain Multi‑Tool"
     description: "Compact wrench and bottle opener for everyday carry."
     price: 12.49
-    image: "/images/daily-items.jpg"
     category: "daily-use"
+    images:
+      - "/images/daily-items.jpg"
+      - "/images/daily-items.jpg"
+      - "/images/daily-items.jpg"
+    videos:
+      - "/videos/keychain-multitool-demo.mp4"
 
   - id: desk-stand-cube
     title: "Desk Stand & Cube Set"
     description: "Phone stand and tactile cube combo for clean workspaces."
     price: 16.99
-    image: "/images/daily-items.jpg"
     category: "daily-use"
+    images:
+      - "/images/daily-items.jpg"
+      - "/images/daily-items.jpg"
+      - "/images/daily-items.jpg"
+    videos:
+      - "/videos/desk-stand-cube-demo.mp4"
 
   - id: hex-stress-wheel
     title: "Hex Stress Wheel"
     description: "A smooth‑spinning hexagonal wheel designed for silent fidgeting."
     price: 11.99
-    image: "/images/hex-wheel.jpg"
     category: "fidgets"
+    images:
+      - "/images/hex-wheel.jpg"
+      - "/images/hex-wheel.jpg"
+      - "/images/hex-wheel.jpg"
+    videos:
+      - "/videos/hex-wheel-demo.mp4"
 
   - id: bolt-action-slider
     title: "Bolt‑Action Slider"
     description: "A satisfying bolt‑action slider with a crisp tactile click."
     price: 17.49
-    image: "/images/bolt-slider.jpg"
     category: "fidgets"
+    images:
+      - "/images/bolt-slider.jpg"
+      - "/images/bolt-slider.jpg"
+      - "/images/bolt-slider.jpg"
+    videos:
+      - "/videos/bolt-slider-demo.mp4"
 
   - id: modular-desk-organizer
     title: "Modular Desk Organizer"
     description: "A customizable 3D‑printed organizer for pens, tools, and accessories."
     price: 22.99
-    image: "/images/desk-organizer.jpg"
     category: "daily-use"
+    images:
+      - "/images/desk-organizer.jpg"
+      - "/images/desk-organizer.jpg"
+      - "/images/desk-organizer.jpg"
+    videos:
+      - "/videos/desk-organizer-demo.mp4"
 
   - id: mini-screwdriver-kit
     title: "Mini Screwdriver Kit"
     description: "A compact 3D‑printed case with precision bits for quick repairs."
     price: 18.99
-    image: "/images/screwdriver-kit.jpg"
     category: "daily-use"
+    images:
+      - "/images/screwdriver-kit.jpg"
+      - "/images/screwdriver-kit.jpg"
+      - "/images/screwdriver-kit.jpg"
+    videos:
+      - "/videos/mini-screwdriver-demo.mp4"
 
   - id: infinity-cube
     title: "Infinity Cube"
     description: "A smooth‑hinged cube that folds endlessly for stress relief."
     price: 13.49
-    image: "/images/infinity-cube.jpg"
     category: "fidgets"
+    images:
+      - "/images/infinity-cube.jpg"
+      - "/images/infinity-cube.jpg"
+      - "/images/infinity-cube.jpg"
+    videos:
+      - "/videos/infinity-cube-demo.mp4"
