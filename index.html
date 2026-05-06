@@ -5,7 +5,11 @@
   <title>FF.inc – Precision 3D Prints</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/styles.css" />
+
+  <!-- YAML parser -->
   <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+
+  <!-- Product loader -->
   <script defer src="/load-products.js"></script>
 </head>
 
@@ -13,8 +17,7 @@
   <header class="site-header">
     <div class="logo">FF<span class="accent">.</span>inc</div>
     <nav class="nav">
-      <a href="#fidgets">Fidgets</a>
-      <a href="#daily">Daily Use</a>
+      <a href="#products">Products</a>
       <a href="#about">About</a>
     </nav>
   </header>
@@ -26,6 +29,7 @@
         <h1>Precision 3D Prints for Everyday Focus</h1>
         <p>High‑quality fidgets and daily‑use tools engineered for feel and durability.</p>
       </div>
+
       <div class="hero-grid">
         <img src="/images/printer-fidget.jpg" />
         <img src="/images/gear-spinner.jpg" />
@@ -34,15 +38,24 @@
       </div>
     </section>
 
-    <!-- PRODUCTS GENERATED FROM YAML -->
+    <!-- PRODUCTS (injected from YAML) -->
     <section class="section" id="products">
       <div class="section-header">
         <h2>Products</h2>
         <p>All items are 3D printed with precision and care.</p>
       </div>
 
-      <div id="product-grid" class="product-grid">
-        <!-- JS will inject product cards here -->
+      <div id="product-grid" class="product-grid"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-header narrow">
+        <h2>About FF.inc</h2>
+        <p>
+          FF.inc specializes in high‑precision 3D printing for fidgets and daily‑use items.
+          Every design is tuned for hand feel, durability, and a clean, modern aesthetic.
+        </p>
       </div>
     </section>
   </main>
