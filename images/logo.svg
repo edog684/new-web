@@ -1,0 +1,38 @@
+<svg width="260" height="80" viewBox="0 0 260 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3AA9FF"/>
+      <stop offset="100%" stop-color="#00C8FF"/>
+    </linearGradient>
+
+    <filter id="neon">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <text x="10" y="55"
+        font-family="Inter, Montserrat, sans-serif"
+        font-size="48"
+        font-weight="700"
+        fill="url(#blueGlow)"
+        filter="url(#neon)"
+        letter-spacing="4">
+    FF
+  </text>
+
+  <circle cx="120" cy="42" r="6" fill="url(#blueGlow)" filter="url(#neon)"/>
+
+  <text x="140" y="55"
+        font-family="Inter, Montserrat, sans-serif"
+        font-size="36"
+        font-weight="300"
+        fill="#E6F7FF"
+        opacity="0.9"
+        letter-spacing="2">
+    inc
+  </text>
+</svg>
