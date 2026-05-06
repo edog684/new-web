@@ -13,24 +13,64 @@
 <body>
   <!-- GLASS NAVBAR -->
   <header class="site-header glass-nav">
-    <div class="logo">FF<span class="accent">.</span>inc</div>
+    <div class="logo-svg">
+      <!-- INLINE LOGO SVG -->
+      <svg width="180" height="60" viewBox="0 0 260 80" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#3AA9FF"/>
+            <stop offset="100%" stop-color="#00C8FF"/>
+          </linearGradient>
+
+          <filter id="neon">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feMerge>
+              <feMergeNode in="blur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+
+        <text x="10" y="55"
+              font-family="Inter, Montserrat, sans-serif"
+              font-size="48"
+              font-weight="700"
+              fill="url(#blueGlow)"
+              filter="url(#neon)"
+              letter-spacing="4">
+          FF
+        </text>
+
+        <circle cx="120" cy="42" r="6" fill="url(#blueGlow)" filter="url(#neon)"/>
+
+        <text x="140" y="55"
+              font-family="Inter, Montserrat, sans-serif"
+              font-size="36"
+              font-weight="300"
+              fill="#E6F7FF"
+              opacity="0.9"
+              letter-spacing="2">
+          inc
+        </text>
+      </svg>
+    </div>
+
     <nav class="nav">
       <a class="nav-btn" href="#products">Products</a>
       <a class="nav-btn" href="#customer-service">Support</a>
       <a class="nav-btn" href="#faq">FAQ</a>
       <a class="nav-btn" href="#about">About</a>
     </nav>
+
     <div class="nav-search">
       <input id="search-input" type="text" placeholder="Search products..." />
     </div>
   </header>
 
   <!-- FLOATING CART BUTTON -->
-  <button class="cart-btn" id="cart-btn">
-    🛒
-  </button>
+  <button class="cart-btn" id="cart-btn">🛒</button>
 
-  <!-- SIMPLE CART / CHECKOUT PANEL -->
+  <!-- CART PANEL -->
   <aside class="cart-panel" id="cart-panel">
     <div class="cart-header">
       <h2>Cart</h2>
@@ -42,6 +82,7 @@
         <span>Total:</span>
         <span id="cart-total">$0.00</span>
       </div>
+
       <details class="shipping-details">
         <summary>Shipping & Address</summary>
         <form id="checkout-form">
@@ -53,6 +94,7 @@
           <button type="submit" class="btn primary full-width">Place Order</button>
         </form>
       </details>
+
       <p class="checkout-note">
         Payments & shipping are handled in‑house. You’ll receive a confirmation email with tracking details.
       </p>
@@ -67,11 +109,9 @@
         <p>High‑quality fidgets and daily‑use tools engineered for feel and durability.</p>
       </div>
 
-      <div class="hero-grid">
-        <img src="/images/printer-fidget.jpg" />
-        <img src="/images/gear-spinner.jpg" />
-        <img src="/images/daily-items.jpg" />
-        <img src="/images/spinning-top-chain.jpg" />
+      <!-- LOGO REPLACES 4-IMAGE GRID -->
+      <div class="hero-logo-container">
+        <img src="/images/logo.svg" class="hero-logo" alt="FF.inc Logo" />
       </div>
     </section>
 
@@ -84,7 +124,7 @@
       <div id="product-grid" class="product-grid"></div>
     </section>
 
-    <!-- CUSTOMER SERVICE (Formspree) -->
+    <!-- CUSTOMER SERVICE -->
     <section class="section" id="customer-service">
       <div class="section-header">
         <h2>Customer Service</h2>
@@ -96,12 +136,7 @@
           <h3>Contact Support</h3>
           <p>Use the form to reach our support team. We typically respond within 24 hours.</p>
 
-          <!-- Replace YOUR_FORM_ID with your Formspree form ID -->
-          <form
-            action="https://formspree.io/f/YOUR_FORM_ID"
-            method="POST"
-            class="support-form"
-          >
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="support-form">
             <input type="email" name="email" placeholder="Your email" required />
             <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
             <button type="submit" class="btn primary full-width">Send Message</button>
@@ -121,7 +156,7 @@
       </div>
     </section>
 
-    <!-- FAQ SECTION -->
+    <!-- FAQ -->
     <section class="section" id="faq">
       <div class="section-header">
         <h2>Frequently Asked Questions</h2>
@@ -131,22 +166,22 @@
       <div class="faq-list">
         <div class="faq-item">
           <h3>What materials do you use?</h3>
-          <p>We primarily use PLA+ and PETG for durability, smooth texture, and clean finishes.</p>
+          <p>We primarily use PLA+ and PETG for durability and smooth texture.</p>
         </div>
 
         <div class="faq-item">
           <h3>How long does shipping take?</h3>
-          <p>Most orders ship within 2–4 business days. Custom prints may take longer.</p>
+          <p>Most orders ship within 2–4 business days.</p>
         </div>
 
         <div class="faq-item">
           <h3>Do you accept custom print requests?</h3>
-          <p>Yes! Email custom@ff.inc with your idea and we’ll work with you to make it real.</p>
+          <p>Yes! Email custom@ff.inc with your idea.</p>
         </div>
 
         <div class="faq-item">
           <h3>Are your fidgets durable?</h3>
-          <p>All items are printed with reinforced walls and high‑quality filament for long‑term use.</p>
+          <p>All items are printed with reinforced walls and high‑quality filament.</p>
         </div>
       </div>
     </section>
