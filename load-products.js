@@ -81,13 +81,18 @@ function setupCartUI() {
     cartPanel.classList.remove("open");
   });
 
-  checkoutForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert("Order placed! (In a real setup, this would trigger payment + shipping logic.)");
-    cart = [];
-    renderCart();
-    e.target.reset();
+  checkoutForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const res = await fetch("/api/checkout", {
+    method: "POST",
+    body: JSON.stringify(cart)
   });
+
+  const data = await res.json();
+  window.location = data.url; // Redirect to Stripe Checkout
+});
+
 }
 
 function addToCart(id) {
