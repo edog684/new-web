@@ -36,12 +36,12 @@ products:
       - "/videos/spin-chain-demo.mp4"
 
   - id: keychain-multitool
-    title: "Keychain Multi‑Tool"
-    description: "Compact wrench and bottle opener for everyday carry."
+    title: "Dual Clicker"
+    description: "Mini keyboard fidget with retro-styled keyboard switches ."
     price: 12.49
     category: "daily-use"
     images:
-      - "/images/daily-items.jpg"
+      - "https://ibb.co/wFzwsvcc"
       - "/images/daily-items.jpg"
       - "/images/daily-items.jpg"
     videos:
