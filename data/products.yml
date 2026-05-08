@@ -1,36 +1,36 @@
 products:
   - id: gear-spinner
-    title: "Gear Spinner"
-    description: "Interlocking gear fidget with smooth mechanical motion."
-    price: 14.99
+    title: "Squishy Cube"
+    description: "Squishy cube to cure all of your squishy needs."
+    price: 7.00
     category: "fidgets"
     images:
-      - "/images/gear-spinner.jpg"
-      - "/images/gear-spinner.jpg"
+      - "https://postimg.cc/p9N4CLv3][img]https://i.postimg.cc/p9N4CLv3/MG-4712.jpg[/img][/url]"
+      - "https://postimg.cc/67sgcpKg][img]https://i.postimg.cc/67sgcpKg/MG-4713.jpg[/img][/url]"
       - "/images/gear-spinner.jpg"
     videos:
       - "/videos/gear-spinner-demo.mp4"
 
   - id: tri-spinner
-    title: "Classic Tri‑Spinner"
-    description: "Balanced, durable tri‑spinner printed for long spin times."
-    price: 9.99
+    title: "Squishy rectangle"
+    description: "Squishy pocket sized rectangle for all of you squishy needs."
+    price: 7.00
     category: "fidgets"
     images:
-      - "/images/printer-fidget.jpg"
+      - "https://postimg.cc/Ty8F03xH][img]https://i.postimg.cc/Ty8F03xH/MG-4714.jpg[/img][/url]"
       - "/images/printer-fidget.jpg"
       - "/images/printer-fidget.jpg"
     videos:
       - "/videos/tri-spinner-demo.mp4"
 
   - id: spin-chain-set
-    title: "Spin & Chain Set"
-    description: "Metal spinning top paired with a chain‑link fidget toy."
+    title: "Rock-opus"
+    description: "Octopus fidget with The Rock as the head."
     price: 19.99
     category: "fidgets"
     images:
-      - "/images/spinning-top-chain.jpg"
-      - "/images/spinning-top-chain.jpg"
+      - "https://postimg.cc/kVrzsgC1][img]https://i.postimg.cc/kVrzsgC1/MG-4715.jpg[/img][/url]"
+      - "https://postimg.cc/p9N4CLvs][img]https://i.postimg.cc/p9N4CLvs/MG-4716.jpg[/img][/url]"
       - "/images/spinning-top-chain.jpg"
     videos:
       - "/videos/spin-chain-demo.mp4"
