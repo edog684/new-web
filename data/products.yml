@@ -1,105 +1,210 @@
 products:
-  - name: "Product 1"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/wFzwsvc/MG-4714.jpg"
+  - id: item-1
+    title: "Item 1"
+    description: "Description for item 1."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/wFzwsvc/MG-4714.jpg"
+    videos:
+      - "/videos/item-1-demo.mp4"
 
-  - name: "Product 2"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/fdqMjwm/MG-4715.jpg"
+  - id: item-2
+    title: "Item 2"
+    description: "Description for item 2."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/fdqMjwm/MG-4715.jpg"
+    videos:
+      - "/videos/item-2-demo.mp4"
 
-  - name: "Product 3"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/PG4yX3t/MG-4716.jpg"
+  - id: item-3
+    title: "Item 3"
+    description: "Description for item 3."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/PG4yX3t/MG-4716.jpg"
+    videos:
+      - "/videos/item-3-demo.mp4"
 
-  - name: "Product 4"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/twR5tXd/MG-4717.jpg"
+  - id: item-4
+    title: "Item 4"
+    description: "Description for item 4."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/twR5tXd/MG-4717.jpg"
+    videos:
+      - "/videos/item-4-demo.mp4"
 
-  - name: "Product 5"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/FkdYppS/MG-4718.jpg"
+  - id: item-5
+    title: "Item 5"
+    description: "Description for item 5."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/FkdYppS/MG-4718.jpg"
+    videos:
+      - "/videos/item-5-demo.mp4"
 
-  - name: "Product 6"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/6Rg4WvF/MG-4719.jpg"
+  - id: item-6
+    title: "Item 6"
+    description: "Description for item 6."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/6Rg4WvF/MG-4719.jpg"
+    videos:
+      - "/videos/item-6-demo.mp4"
 
-  - name: "Product 7"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/MyL9jnL/MG-4720.jpg"
+  - id: item-7
+    title: "Item 7"
+    description: "Description for item 7."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/MyL9jnL/MG-4720.jpg"
+    videos:
+      - "/videos/item-7-demo.mp4"
 
-  - name: "Product 8"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/99vmSNT/MG-4721.jpg"
+  - id: item-8
+    title: "Item 8"
+    description: "Description for item 8."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/99vmSNT/MG-4721.jpg"
+    videos:
+      - "/videos/item-8-demo.mp4"
 
-  - name: "Product 9"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/1G71qpT/MG-4722.jpg"
+  - id: item-9
+    title: "Item 9"
+    description: "Description for item 9."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/1G71qpT/MG-4722.jpg"
+    videos:
+      - "/videos/item-9-demo.mp4"
 
-  - name: "Product 10"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/Sjb6V78/MG-4723.jpg"
+  - id: item-10
+    title: "Item 10"
+    description: "Description for item 10."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/Sjb6V78/MG-4723.jpg"
+    videos:
+      - "/videos/item-10-demo.mp4"
 
-  - name: "Product 11"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/hRf9GSZ/MG-4724.jpg"
+  - id: item-11
+    title: "Item 11"
+    description: "Description for item 11."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/hRf9GSZ/MG-4724.jpg"
+    videos:
+      - "/videos/item-11-demo.mp4"
 
-  - name: "Product 12"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/gbPWm7v/MG-4725.jpg"
+  - id: item-12
+    title: "Item 12"
+    description: "Description for item 12."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/gbPWm7v/MG-4725.jpg"
+    videos:
+      - "/videos/item-12-demo.mp4"
 
-  - name: "Product 13"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/5XcB3cr/MG-4726.jpg"
+  - id: item-13
+    title: "Item 13"
+    description: "Description for item 13."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/5XcB3cr/MG-4726.jpg"
+    videos:
+      - "/videos/item-13-demo.mp4"
 
-  - name: "Product 14"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/qGQQ8nr/MG-4727.jpg"
+  - id: item-14
+    title: "Item 14"
+    description: "Description for item 14."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/qGQQ8nr/MG-4727.jpg"
+    videos:
+      - "/videos/item-14-demo.mp4"
 
-  - name: "Product 15"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/N6MTGxV/MG-4728.jpg"
+  - id: item-15
+    title: "Item 15"
+    description: "Description for item 15."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/N6MTGxV/MG-4728.jpg"
+    videos:
+      - "/videos/item-15-demo.mp4"
 
-  - name: "Product 16"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/S4Kxfnt/MG-4729.jpg"
+  - id: item-16
+    title: "Item 16"
+    description: "Description for item 16."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/S4Kxfnt/MG-4729.jpg"
+    videos:
+      - "/videos/item-16-demo.mp4"
 
-  - name: "Product 17"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/C3xjCwD/MG-4730.jpg"
+  - id: item-17
+    title: "Item 17"
+    description: "Description for item 17."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/C3xjCwD/MG-4730.jpg"
+    videos:
+      - "/videos/item-17-demo.mp4"
 
-  - name: "Product 18"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/rGLV97Z/MG-4731.jpg"
+  - id: item-18
+    title: "Item 18"
+    description: "Description for item 18."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/rGLV97Z/MG-4731.jpg"
+    videos:
+      - "/videos/item-18-demo.mp4"
 
-  - name: "Product 19"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/JRz7cp8/MG-4732.jpg"
+  - id: item-19
+    title: "Item 19"
+    description: "Description for item 19."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/JRz7cp8/MG-4732.jpg"
+    videos:
+      - "/videos/item-19-demo.mp4"
 
-  - name: "Product 20"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/DPrQTNj/MG-4733.jpg"
+  - id: item-20
+    title: "Item 20"
+    description: "Description for item 20."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/DPrQTNj/MG-4733.jpg"
+    videos:
+      - "/videos/item-20-demo.mp4"
 
-  - name: "Product 21"
-    price: 0.00
-    description: "Description here"
-    image: "https://i.ibb.co/qLPSMhG/MG-4734.jpg"
+  - id: item-21
+    title: "Item 21"
+    description: "Description for item 21."
+    price: 12.49
+    category: "daily-use"
+    images:
+      - "https://i.ibb.co/qLPSMhG/MG-4734.jpg"
+    videos:
+      - "/videos/item-21-demo.mp4"
