@@ -41,8 +41,8 @@ products:
     price: 12.49
     category: "daily-use"
     images:
-      - "https://ibb.co/wFzwsvcc"
-      - "/images/daily-items.jpg"
+      - "https://i.ibb.co/wFzwsvc/MG-4714.jpg"
+      - "https://i.ibb.co/fdqMjwm/MG-4715.jpg"
       - "/images/daily-items.jpg"
     videos:
       - "/videos/keychain-multitool-demo.mp4"
