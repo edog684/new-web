@@ -5,9 +5,9 @@ products:
     price: 12.49
     category: "fidget"
     images:
-      - "/images/_MG_4712.JPG"
-      - "/images/_MG_4713.JPG"
-      - "/images/_MG_4714.JPG"
+      - "/images/_MG_4727.JPG"
+      - "/images/_MG_4728.JPG"
+      - "/images/_MG_4729.JPG"
     videos: []
 
   - id: item-2
@@ -16,9 +16,7 @@ products:
     price: 12.49
     category: "accessory"
     images:
-      - "/images/_MG_4715.JPG"
-      - "/images/_MG_4716.JPG"
-      - "/images/_MG_4717.JPG"
+      - "/images/_MG_4714.JPG"
     videos: []
 
   - id: item-3
@@ -27,6 +25,7 @@ products:
     price: 12.49
     category: "accessory"
     images:
+      - "/images/_MG_4717.JPG"
       - "/images/_MG_4718.JPG"
       - "/images/_MG_4719.JPG"
       - "/images/_MG_4720.JPG"
@@ -38,9 +37,8 @@ products:
     price: 12.49
     category: "home"
     images:
-      - "/images/_MG_4721.JPG"
-      - "/images/_MG_4722.JPG"
-      - "/images/_MG_4723.JPG"
+      - "/images/_MG_4712.JPG"
+      - "/images/_MG_4713.JPG"
     videos: []
 
   - id: item-5
@@ -49,6 +47,7 @@ products:
     price: 12.49
     category: "fidget"
     images:
+      - "/images/_MG_4723.JPG"
       - "/images/_MG_4724.JPG"
       - "/images/_MG_4725.JPG"
       - "/images/_MG_4726.JPG"
@@ -60,9 +59,9 @@ products:
     price: 12.49
     category: "utility"
     images:
-      - "/images/_MG_4727.JPG"
-      - "/images/_MG_4728.JPG"
-      - "/images/_MG_4729.JPG"
+      - "/images/_MG_4730.JPG"
+      - "/images/_MG_4731.JPG"
+      - "/images/_MG_4732.JPG"
     videos: []
 
   - id: item-7
@@ -71,7 +70,6 @@ products:
     price: 12.49
     category: "home"
     images:
-      - "/images/_MG_4730.JPG"
-      - "/images/_MG_4731.JPG"
-      - "/images/_MG_4732.JPG"
+      - "/images/_MG_4721.JPG"
+      - "/images/_MG_4722.JPG"
     videos: []
