@@ -75,13 +75,3 @@ products:
       - "/images/_MG_4731.JPG"
       - "/images/_MG_4732.JPG"
     videos: []
-
-
-  - id: item-21
-    title: "Item 21"
-    description: "Description for item 21."
-    price: 12.49
-    category: "daily-use"
-    images:
-      - "https://i.ibb.co/qLPSMhG/MG-4734.jpg"
-    videos: []
