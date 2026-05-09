@@ -2,7 +2,7 @@ products:
   - id: item-1
     title: "Item 1"
     description: "Description for item 1."
-    price: 12.49
+    price: 67.67
     category: "fidgets"
     images:
       - "https://i.ibb.co/wFzwsvc/MG-4714.jpg"
