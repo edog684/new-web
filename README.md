@@ -1,169 +1,144 @@
-# FF.inc – Precision 3D Prints
+# FF.inc - Precision 3D Prints
 
-A modern, dark-themed e-commerce website for FF.inc, specializing in high-precision 3D printed fidgets and daily-use tools. Built as a static site with dynamic product loading from YAML data, featuring a shopping cart, search functionality, and Stripe-powered checkout.
+A dark-themed storefront for FF.inc, a small catalog of precision 3D printed fidgets, accessories, desk items, and daily-use tools. The site is served by Express, loads product data from a YAML file in the browser, and sends cart contents to a Stripe Checkout session.
 
-## 🚀 Features
+## Features
 
-- **Product Catalog**: Dynamic product grid loaded from YAML data
-- **Search Functionality**: Real-time search across product titles, descriptions, and categories
-- **Shopping Cart**: Add/remove items with quantity tracking and total calculation
-- **Product Modal**: Detailed view with image/video carousel and touch/swipe support
-- **Responsive Design**: Mobile-friendly layout with glassmorphism navigation
-- **Stripe Integration**: Secure payment processing via Stripe Checkout
-- **Contact Form**: Customer support form using Formspree
-- **Static Deployment**: Optimized for Vercel with serverless API functions
+- Product catalog loaded from `data/products.yml`
+- Real-time search across product titles, descriptions, and categories
+- Shopping cart with quantity tracking and total calculation
+- Product detail modal with image/video carousel and touch swipe support
+- Stripe Checkout session creation through an Express API route
+- Contact form powered by Formspree
+- Responsive dark UI with local image assets
 
-## 🛠 Tech Stack
+## Tech Stack
 
-- **Backend**: Node.js with Express.js
-- **Frontend**: HTML5, CSS3, Vanilla JavaScript
-- **Data Management**: YAML for product catalog
-- **Styling**: Custom CSS with dark theme and glassmorphism effects
-- **Payment Processing**: Stripe API
-- **Deployment**: Railway (Node.js application)
-- **Forms**: Formspree for contact submissions
-- **Libraries**: js-yaml for YAML parsing
+- Node.js and Express for serving the site and checkout API
+- HTML, CSS, and vanilla JavaScript for the frontend
+- YAML product catalog parsed in the browser with `js-yaml` from a CDN
+- Stripe Checkout for payment redirects
+- Formspree for support form submissions
 
-## 📁 Project Structure
+## Project Structure
 
-```
-├── index.html              # Main page layout
-├── styles.css              # Dark theme and responsive styles
-├── load-products.js        # Product loading, cart, and UI logic
-├── server.js               # Express server for Railway deployment
-├── data/
-│   └── products.yml        # Product catalog data
-├── images/                 # Product images and assets
-├── videos/                 # Product demo videos
-├── success.html            # Payment success page
-├── cancel.html             # Payment cancel page
-└── package.json            # Node.js dependencies and scripts
+```text
+.
+|-- index.html          # Main storefront page
+|-- styles.css          # Site styling and responsive layout
+|-- load-products.js    # Product loading, search, cart, modal, and checkout UI
+|-- server.js           # Express static server and /api/checkout route
+|-- package.json        # Node scripts and production dependencies
+|-- data/
+|   `-- products.yml    # Product catalog
+|-- images/             # Logo and product images
+|-- videos/             # Optional product demo videos
+|-- success.html        # Stripe success redirect page
+`-- cancel.html         # Stripe cancel redirect page
 ```
 
-## 🏃‍♂️ Local Development
+## Local Development
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
-- npm or yarn
+- Node.js 18 or newer recommended
+- npm
+- Stripe secret key for testing checkout
 
-### Installation
+### Setup
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/edog684/new-web.git
-   cd new-web
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## 🚀 Deployment
-
-### Railway Deployment
-
-1. Connect your GitHub repository to Railway
-2. Railway will automatically detect it's a Node.js project
-3. Add your Stripe secret key as an environment variable:
-   - `STRIPE_SECRET_KEY`: Your Stripe secret key
-4. Deploy automatically on push to main branch
-
-### Manual Deployment
-
-The app runs on Express.js and can be deployed to any Node.js hosting platform:
-
-1. Set `STRIPE_SECRET_KEY` environment variable
-2. Run `npm start`
-3. Ensure images are in the `images/` folder
-
-## 📊 Data Management
-
-Products are stored in `data/products.yml`. Each product entry includes:
-
-```yaml
-- id: unique-identifier
-  title: "Product Name"
-  description: "Product description"
-  price: 12.49
-  category: "daily-use"
-  images:
-    - "image-url-1"
-    - "image-url-2"
-  videos:
-    - "video-url-1"
+```bash
+npm install
 ```
 
-### Adding Products
+Set your Stripe secret key before testing checkout:
 
-1. Add product images to the `images/` folder
-2. Add demo videos to the `videos/` folder (optional)
-3. Update `data/products.yml` with new product data using local paths like `/images/product.jpg`
-4. Commit and deploy changes
+```bash
+# macOS/Linux
+export STRIPE_SECRET_KEY=sk_test_your_key_here
 
-## 💳 Payment Integration
+# Windows PowerShell
+$env:STRIPE_SECRET_KEY="sk_test_your_key_here"
+```
 
-The site uses Stripe Checkout for secure payments:
+Start the server:
 
-- Express route in `server.js` handles `/api/checkout`
-- Cart data is sent to the API and converted to Stripe line items
-- Users are redirected to Stripe's hosted checkout page
-- Success/cancel pages handle post-payment flow
+```bash
+npm run dev
+```
 
-### Configuration
+Open `http://localhost:3000`.
 
-1. Create a Stripe account at [stripe.com](https://stripe.com)
-2. Get your secret key from the Stripe dashboard
-3. Set as environment variable: `STRIPE_SECRET_KEY`
-4. Success/cancel URLs are automatically generated based on the deployment domain
+## Environment Variables
 
-## 🎨 Customization
+| Name | Required | Purpose |
+| --- | --- | --- |
+| `STRIPE_SECRET_KEY` | Yes for checkout | Used by `server.js` to create Stripe Checkout sessions. |
+| `PORT` | No | Server port. Defaults to `3000`. |
 
-### Styling
+## Product Data
 
-- Main styles in `styles.css`
-- Dark theme with CSS custom properties
-- Glassmorphism effects on navigation
-- Responsive breakpoints for mobile/desktop
+Products live in `data/products.yml` under a top-level `products` array:
 
-### Functionality
+```yaml
+products:
+  - id: item-1
+    title: "Pocket Torque Spinner"
+    description: "A compact precision spinner..."
+    price: 12.49
+    category: "fidget"
+    images:
+      - "/images/_MG_4712.JPG"
+    videos: []
+```
 
-- Product loading and rendering in `load-products.js`
-- Cart management and local storage
-- Search filtering logic
-- Modal carousel with touch support
+To add or update products:
 
-## 📞 Support & Contact
+1. Add product images to `images/`.
+2. Add optional demo videos to `videos/`.
+3. Update `data/products.yml`.
+4. Use site-root paths such as `/images/product.jpg` or `/videos/demo.mp4`.
+5. Restart the server if your host does not automatically reload static files.
 
-- **Customer Support**: Use the contact form on the website
-- **Custom Orders**: Email custom@ff.inc
-- **Technical Issues**: Create an issue on GitHub
+## Checkout Flow
 
-## 🤝 Contributing
+The frontend posts the cart to `POST /api/checkout`. The Express route converts each cart item into a Stripe line item, creates a hosted Checkout session, and returns the Stripe redirect URL.
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Make your changes and test locally
-4. Commit changes: `git commit -am 'Add feature'`
-5. Push to branch: `git push origin feature-name`
-6. Submit a pull request
+Current checkout behavior:
 
-## 📄 License
+- Payments are handled by Stripe Checkout.
+- The cart is stored only in browser memory and resets on page refresh.
+- The shipping/address form is currently frontend-only; `load-products.js` posts the cart contents, not the entered address fields.
+- There is no Stripe webhook handler in this repo, so fulfillment and order confirmation need an external/manual process or a future webhook implementation.
 
-© 2024 FF.inc — All rights reserved.
+## Deployment
 
-## 🔗 Links
+This app is a standard Node.js service and can be deployed to Railway or another Node-capable host.
 
-- [Live Site](https://your-site.com) (update with your Railway domain)
-- [Railway Documentation](https://docs.railway.app)
-- [Stripe Documentation](https://stripe.com/docs)
-- [Express.js Documentation](https://expressjs.com)
-- [Formspree](https://formspree.io)
+Deployment checklist:
+
+1. Install dependencies with `npm install` or `npm ci`.
+2. Set `STRIPE_SECRET_KEY` in the host environment.
+3. Run `npm start`.
+4. Ensure the deployment serves the repository root so `/images`, `/data/products.yml`, `/styles.css`, and `/load-products.js` are reachable.
+5. Configure your Stripe account and fulfillment process before accepting real orders.
+
+## Useful Commands
+
+```bash
+npm run dev      # Start local server
+npm start        # Start production server
+node --check server.js
+node --check load-products.js
+npm audit --omit=dev
+```
+
+## Known Gaps
+
+- No automated tests are included yet.
+- Cart items can be tampered with client-side before checkout; prices should be validated server-side before taking real payments.
+- Checkout does not currently persist orders or collect submitted shipping fields.
+
+## License
+
+Copyright 2024 FF.inc. All rights reserved.

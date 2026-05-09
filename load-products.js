@@ -22,7 +22,7 @@ function renderProducts(products) {
     card.className = "card";
 
     card.innerHTML = `
-      <img src="${p.images[0]}" alt="${p.title}" />
+      <img src="${p.images[0]}" alt="${p.title}" loading="lazy" />
       <h3>${p.title}</h3>
       <p>${p.description}</p>
       <div class="price">$${p.price.toFixed(2)}</div>
@@ -45,6 +45,7 @@ function renderProducts(products) {
     btn.addEventListener("click", () => {
       const id = btn.getAttribute("data-id");
       const product = allProducts.find((p) => p.id === id);
+      if (!product) return;
       openProductModal(product);
     });
   });
@@ -82,17 +83,16 @@ function setupCartUI() {
   });
 
   checkoutForm.addEventListener("submit", async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const res = await fetch("/api/checkout", {
-    method: "POST",
-    body: JSON.stringify(cart)
+    const res = await fetch("/api/checkout", {
+      method: "POST",
+      body: JSON.stringify(cart)
+    });
+
+    const data = await res.json();
+    window.location = data.url; // Redirect to Stripe Checkout
   });
-
-  const data = await res.json();
-  window.location = data.url; // Redirect to Stripe Checkout
-});
-
 }
 
 function addToCart(id) {
@@ -122,7 +122,7 @@ function renderCart() {
     total += lineTotal;
 
     row.innerHTML = `
-      <span>${item.title} × ${item.qty}</span>
+      <span>${item.title} x ${item.qty}</span>
       <span>$${lineTotal.toFixed(2)}</span>
     `;
     container.appendChild(row);
@@ -148,6 +148,8 @@ let totalSlides = 0;
 
 // OPEN MODAL
 function openProductModal(product) {
+  if (!product) return;
+
   modalTitle.textContent = product.title;
   modalDescription.textContent = product.description;
   modalPrice.textContent = `$${product.price.toFixed(2)}`;
@@ -171,6 +173,7 @@ function openProductModal(product) {
     } else {
       element = document.createElement("img");
       element.src = src;
+      element.loading = "lazy";
     }
 
     carouselTrack.appendChild(element);
@@ -223,7 +226,6 @@ carouselTrack.addEventListener("touchend", (e) => {
 
 // UPDATE CAROUSEL POSITION
 function updateCarousel() {
-  const width = carouselTrack.clientWidth;
   carouselTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
 

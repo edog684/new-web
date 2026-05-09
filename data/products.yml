@@ -84,5 +84,4 @@ products:
     category: "daily-use"
     images:
       - "https://i.ibb.co/qLPSMhG/MG-4734.jpg"
-    videos:
-      - "/videos/item-21-demo.mp4"
+    videos: []
