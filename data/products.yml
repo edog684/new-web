@@ -1,210 +1,133 @@
 products:
-  - id: item-1
-    title: "Item 1"
-    description: "Description for item 1."
-    price: 67.67
+  - id: gear-spinner
+    title: "Gear Spinner"
+    description: "Interlocking gear fidget with smooth mechanical motion."
+    price: 14.99
+    title: "Squishy Cube"
+    description: "Squishy cube to cure all of your squishy needs."
+    price: 7.00
     category: "fidgets"
     images:
-      - "https://i.ibb.co/wFzwsvc/MG-4714.jpg"
+      - "/images/gear-spinner.jpg"
+      - "/images/gear-spinner.jpg"
+      - "https://postimg.cc/p9N4CLv3][img]https://i.postimg.cc/p9N4CLv3/MG-4712.jpg[/img][/url]"
+      - "https://postimg.cc/67sgcpKg][img]https://i.postimg.cc/67sgcpKg/MG-4713.jpg[/img][/url]"
+      - "/images/gear-spinner.jpg"
     videos:
-      - "/videos/item-1-demo.mp4"
+      - "/videos/gear-spinner-demo.mp4"
 
-  - id: item-2
-    title: "Item 2"
-    description: "Description for item 2."
-    price: 12.49
+  - id: tri-spinner
+    title: "Classic Tri‑Spinner"
+    description: "Balanced, durable tri‑spinner printed for long spin times."
+    price: 9.99
+    title: "Squishy rectangle"
+    description: "Squishy pocket sized rectangle for all of you squishy needs."
+    price: 7.00
     category: "fidgets"
     images:
-      - "https://i.ibb.co/fdqMjwm/MG-4715.jpg"
+      - "/images/printer-fidget.jpg"
+      - "https://postimg.cc/Ty8F03xH][img]https://i.postimg.cc/Ty8F03xH/MG-4714.jpg[/img][/url]"
+      - "/images/printer-fidget.jpg"
+      - "/images/printer-fidget.jpg"
     videos:
-      - "/videos/item-2-demo.mp4"
+      - "/videos/tri-spinner-demo.mp4"
 
-  - id: item-3
-    title: "Item 3"
-    description: "Description for item 3."
-    price: 12.49
+  - id: spin-chain-set
+    title: "Spin & Chain Set"
+    description: "Metal spinning top paired with a chain‑link fidget toy."
+    title: "Rock-opus"
+    description: "Octopus fidget with The Rock as the head."
+    price: 19.99
     category: "fidgets"
     images:
-      - "https://i.ibb.co/PG4yX3t/MG-4716.jpg"
+      - "/images/spinning-top-chain.jpg"
+      - "/images/spinning-top-chain.jpg"
+      - "https://postimg.cc/kVrzsgC1][img]https://i.postimg.cc/kVrzsgC1/MG-4715.jpg[/img][/url]"
+      - "https://postimg.cc/p9N4CLvs][img]https://i.postimg.cc/p9N4CLvs/MG-4716.jpg[/img][/url]"
+      - "/images/spinning-top-chain.jpg"
     videos:
-      - "/videos/item-3-demo.mp4"
+      - "/videos/spin-chain-demo.mp4"
 
-  - id: item-4
-    title: "Item 4"
-    description: "Description for item 4."
+  - id: keychain-multitool
+    title: "Keychain Multi‑Tool"
+    description: "Compact wrench and bottle opener for everyday carry."
     price: 12.49
-    category: "fidgets"
+    category: "daily-use"
     images:
-      - "https://i.ibb.co/twR5tXd/MG-4717.jpg"
+      - "/images/daily-items.jpg"
+      - "/images/daily-items.jpg"
+      - "/images/daily-items.jpg"
     videos:
-      - "/videos/item-4-demo.mp4"
+      - "/videos/keychain-multitool-demo.mp4"
 
-  - id: item-5
-    title: "Item 5"
-    description: "Description for item 5."
-    price: 12.49
-    category: "fidgets"
+  - id: desk-stand-cube
+    title: "Desk Stand & Cube Set"
+    description: "Phone stand and tactile cube combo for clean workspaces."
+    price: 16.99
+    category: "daily-use"
     images:
-      - "https://i.ibb.co/FkdYppS/MG-4718.jpg"
+      - "/images/daily-items.jpg"
+      - "/images/daily-items.jpg"
+      - "/images/daily-items.jpg"
     videos:
-      - "/videos/item-5-demo.mp4"
+      - "/videos/desk-stand-cube-demo.mp4"
 
-  - id: item-6
-    title: "Item 6"
-    description: "Description for item 6."
-    price: 12.49
+  - id: hex-stress-wheel
+    title: "Hex Stress Wheel"
+    description: "A smooth‑spinning hexagonal wheel designed for silent fidgeting."
+    price: 11.99
     category: "fidgets"
     images:
-      - "https://i.ibb.co/6Rg4WvF/MG-4719.jpg"
+      - "/images/hex-wheel.jpg"
+      - "/images/hex-wheel.jpg"
+      - "/images/hex-wheel.jpg"
     videos:
-      - "/videos/item-6-demo.mp4"
+      - "/videos/hex-wheel-demo.mp4"
 
-  - id: item-7
-    title: "Item 7"
-    description: "Description for item 7."
-    price: 12.49
+  - id: bolt-action-slider
+    title: "Bolt‑Action Slider"
+    description: "A satisfying bolt‑action slider with a crisp tactile click."
+    price: 17.49
     category: "fidgets"
     images:
-      - "https://i.ibb.co/MyL9jnL/MG-4720.jpg"
+      - "/images/bolt-slider.jpg"
+      - "/images/bolt-slider.jpg"
+      - "/images/bolt-slider.jpg"
     videos:
-      - "/videos/item-7-demo.mp4"
+      - "/videos/bolt-slider-demo.mp4"
 
-  - id: item-8
-    title: "Item 8"
-    description: "Description for item 8."
-    price: 12.49
-    category: "fidgets"
+  - id: modular-desk-organizer
+    title: "Modular Desk Organizer"
+    description: "A customizable 3D‑printed organizer for pens, tools, and accessories."
+    price: 22.99
+    category: "daily-use"
     images:
-      - "https://i.ibb.co/99vmSNT/MG-4721.jpg"
+      - "/images/desk-organizer.jpg"
+      - "/images/desk-organizer.jpg"
+      - "/images/desk-organizer.jpg"
     videos:
-      - "/videos/item-8-demo.mp4"
+      - "/videos/desk-organizer-demo.mp4"
 
-  - id: item-9
-    title: "Item 9"
-    description: "Description for item 9."
-    price: 12.49
-    category: "fidgets"
+  - id: mini-screwdriver-kit
+    title: "Mini Screwdriver Kit"
+    description: "A compact 3D‑printed case with precision bits for quick repairs."
+    price: 18.99
+    category: "daily-use"
     images:
-      - "https://i.ibb.co/1G71qpT/MG-4722.jpg"
+      - "/images/screwdriver-kit.jpg"
+      - "/images/screwdriver-kit.jpg"
+      - "/images/screwdriver-kit.jpg"
     videos:
-      - "/videos/item-9-demo.mp4"
+      - "/videos/mini-screwdriver-demo.mp4"
 
-  - id: item-10
-    title: "Item 10"
-    description: "Description for item 10."
-    price: 12.49
+  - id: infinity-cube
+    title: "Infinity Cube"
+    description: "A smooth‑hinged cube that folds endlessly for stress relief."
+    price: 13.49
     category: "fidgets"
     images:
-      - "https://i.ibb.co/Sjb6V78/MG-4723.jpg"
+      - "/images/infinity-cube.jpg"
+      - "/images/infinity-cube.jpg"
+      - "/images/infinity-cube.jpg"
     videos:
-      - "/videos/item-10-demo.mp4"
-
-  - id: item-11
-    title: "Item 11"
-    description: "Description for item 11."
-    price: 12.49
-    category: "fidgets"
-    images:
-      - "https://i.ibb.co/hRf9GSZ/MG-4724.jpg"
-    videos:
-      - "/videos/item-11-demo.mp4"
-
-  - id: item-12
-    title: "Item 12"
-    description: "Description for item 12."
-    price: 12.49
-    category: "fidgets"
-    images:
-      - "https://i.ibb.co/gbPWm7v/MG-4725.jpg"
-    videos:
-      - "/videos/item-12-demo.mp4"
-
-  - id: item-13
-    title: "Item 13"
-    description: "Description for item 13."
-    price: 12.49
-    category: "fidgets"
-    images:
-      - "https://i.ibb.co/5XcB3cr/MG-4726.jpg"
-    videos:
-      - "/videos/item-13-demo.mp4"
-
-  - id: item-14
-    title: "Item 14"
-    description: "Description for item 14."
-    price: 12.49
-    category: "fidgets"
-    images:
-      - "https://i.ibb.co/qGQQ8nr/MG-4727.jpg"
-    videos:
-      - "/videos/item-14-demo.mp4"
-
-  - id: item-15
-    title: "Item 15"
-    description: "Description for item 15."
-    price: 12.49
-    category: "fidgets"
-    images:
-      - "https://i.ibb.co/N6MTGxV/MG-4728.jpg"
-    videos:
-      - "/videos/item-15-demo.mp4"
-
-  - id: item-16
-    title: "Item 16"
-    description: "Description for item 16."
-    price: 12.49
-    category: "fidgets"
-    images:
-      - "https://i.ibb.co/S4Kxfnt/MG-4729.jpg"
-    videos:
-      - "/videos/item-16-demo.mp4"
-
-  - id: item-17
-    title: "Item 17"
-    description: "Description for item 17."
-    price: 12.49
-    category: "fidgets"
-    images:
-      - "https://i.ibb.co/C3xjCwD/MG-4730.jpg"
-    videos:
-      - "/videos/item-17-demo.mp4"
-
-  - id: item-18
-    title: "Item 18"
-    description: "Description for item 18."
-    price: 12.49
-    category: "fidgets"
-    images:
-      - "https://i.ibb.co/rGLV97Z/MG-4731.jpg"
-    videos:
-      - "/videos/item-18-demo.mp4"
-
-  - id: item-19
-    title: "Item 19"
-    description: "Description for item 19."
-    price: 12.49
-    category: "fidgets"
-    images:
-      - "https://i.ibb.co/JRz7cp8/MG-4732.jpg"
-    videos:
-      - "/videos/item-19-demo.mp4"
-
-  - id: item-20
-    title: "Item 20"
-    description: "Description for item 20."
-    price: 12.49
-    category: "fidgets"
-    images:
-      - "https://i.ibb.co/DPrQTNj/MG-4733.jpg"
-    videos:
-      - "/videos/item-20-demo.mp4"
-
-  - id: item-21
-    title: "Item 21"
-    description: "Description for item 21."
-    price: 12.49
-    category: "fidgets"
-    images:
-      - "https://i.ibb.co/qLPSMhG/MG-4734.jpg"
-    videos:
-      - "/videos/item-21-demo.mp4"
+      - "/videos/infinity-cube-demo.mp4"
