@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "serve .",
-    "start": "serve ."
+    "dev": "node server.js",
+    "start": "node server.js"
   },
   "dependencies": {
-    "serve": "^14.2.0"
+    "express": "^5.2.1",
+    "serve": "^14.2.0",
+    "stripe": "^22.1.1"
   }
 }

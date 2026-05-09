@@ -5,7 +5,7 @@ products:
     price: 12.49
     category: "daily-use"
     images:
-      - "https://i.ibb.co/wFzwsvc/MG-4714.jpg"
+      - "/images/_MG_4714.JPG"
     videos:
       - "/videos/item-1-demo.mp4"
 
@@ -15,7 +15,7 @@ products:
     price: 12.49
     category: "daily-use"
     images:
-      - "https://i.ibb.co/fdqMjwm/MG-4715.jpg"
+      - "/images/_MG_4715.JPG"
     videos:
       - "/videos/item-2-demo.mp4"
 
@@ -25,7 +25,7 @@ products:
     price: 12.49
     category: "daily-use"
     images:
-      - "https://i.ibb.co/PG4yX3t/MG-4716.jpg"
+      - "/images/_MG_4716.JPG"
     videos:
       - "/videos/item-3-demo.mp4"
 
@@ -35,7 +35,7 @@ products:
     price: 12.49
     category: "daily-use"
     images:
-      - "https://i.ibb.co/twR5tXd/MG-4717.jpg"
+      - "/images/_MG_4717.JPG"
     videos:
       - "/videos/item-4-demo.mp4"
 
@@ -45,7 +45,7 @@ products:
     price: 12.49
     category: "daily-use"
     images:
-      - "https://i.ibb.co/FkdYppS/MG-4718.jpg"
+      - "/images/_MG_4718.JPG"
     videos:
       - "/videos/item-5-demo.mp4"
 
