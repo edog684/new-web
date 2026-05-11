@@ -10,8 +10,8 @@ products:
       - "/images/_MG_4729.JPG"
     videos:
       - "/images/GX010089.MP4"
-      - "/images/GX010088.MP4"
-      - "/images/GX010087.MP4"
+      - "/images/GX010090.MP4"
+      - "/images/GX010091.MP4"
 
   - id: item-2
     title: "Minimal Carry Clip"
@@ -21,7 +21,7 @@ products:
     images:
       - "/images/_MG_4714.JPG"
     videos:
-      - "/images/GX010086.MP4"
+      - "/images/GX010084.MP4"
 
   - id: item-3
     title: "Tactile Key Organizer"
@@ -35,9 +35,9 @@ products:
       - "/images/_MG_4720.JPG"
     videos:
       - "/images/GX010085.MP4"
-      - "/images/GX010084.MP4"
-      - "/images/GX010083.MP4"
-      - "/images/GX010082.MP4"
+      - "/images/GX010086.MP4"
+      - "/images/GX010087.MP4"
+      - "/images/GX010088.MP4"
 
   - id: item-4
     title: "Balanced Desk Toy"
@@ -48,8 +48,8 @@ products:
       - "/images/_MG_4712.JPG"
       - "/images/_MG_4713.JPG"
     videos:
-      - "/images/GX010091.MP4"
-      - "/images/GX010090.MP4"
+      - "/images/GX010082.MP4"
+      - "/images/GX010083.MP4"
 
   - id: item-5
     title: "Ridge Grip Fidget"
