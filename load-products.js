@@ -160,13 +160,14 @@ function openProductModal(product) {
   carouselTrack.innerHTML = "";
   currentSlide = 0;
 
-  const media = [...product.images, ...product.videos];
+  const media = [...(product.images || []), ...(product.videos || [])];
   totalSlides = media.length;
 
   media.forEach((src) => {
     let element;
 
-    if (src.endsWith(".mp4") || src.endsWith(".webm")) {
+    const lowerSrc = String(src).toLowerCase();
+    if (lowerSrc.endsWith(".mp4") || lowerSrc.endsWith(".webm")) {
       element = document.createElement("video");
       element.src = src;
       element.controls = true;
