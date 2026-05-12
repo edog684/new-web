@@ -1,16 +1,31 @@
 let allProducts = [];
 let cart = [];
+let activeCategory = "all";
+let searchQuery = "";
 
 // Load products from YAML
 async function loadProducts() {
-  const res = await fetch("/data/products.yml");
-  const yamlText = await res.text();
-  const data = jsyaml.load(yamlText);
-  allProducts = data.products || [];
+  try {
+    const res = await fetch("/data/products.yml");
+    if (!res.ok) {
+      throw new Error(`Failed to fetch products.yml (${res.status})`);
+    }
 
-  renderProducts(allProducts);
-  setupSearch();
-  setupCartUI();
+    const yamlText = await res.text();
+    const data = jsyaml.load(yamlText) || {};
+    allProducts = Array.isArray(data.products) ? data.products : [];
+
+    renderCategoryFilters(allProducts);
+    renderFilteredProducts();
+    setupSearch();
+    setupCartUI();
+  } catch (error) {
+    console.error("Failed to load products:", error);
+    const grid = document.getElementById("product-grid");
+    if (grid) {
+      grid.innerHTML = "<p>Could not load products right now. Please refresh and try again.</p>";
+    }
+  }
 }
 
 function renderProducts(products) {
@@ -22,10 +37,11 @@ function renderProducts(products) {
     card.className = "card";
 
     card.innerHTML = `
-      <img src="${p.images[0]}" alt="${p.title}" loading="lazy" />
+      <img src="${(p.images && p.images[0]) || ""}" alt="${p.title}" loading="lazy" />
       <h3>${p.title}</h3>
+      <div class="category-pill">${p.category || "uncategorized"}</div>
       <p>${p.description}</p>
-      <div class="price">$${p.price.toFixed(2)}</div>
+      <div class="price">$${Number(p.price || 0).toFixed(2)}</div>
 
       <button class="btn ghost view-product" data-id="${p.id}">View</button>
       <button class="btn primary add-to-cart" data-id="${p.id}">Add to Cart</button>
@@ -51,19 +67,53 @@ function renderProducts(products) {
   });
 }
 
+function renderCategoryFilters(products) {
+  const container = document.getElementById("category-filters");
+  if (!container) return;
+
+  const categories = Array.from(
+    new Set(products.map((p) => (p.category || "").trim().toLowerCase()).filter(Boolean))
+  ).sort();
+
+  const labels = ["all", ...categories];
+  container.innerHTML = "";
+
+  labels.forEach((label) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = `category-chip${label === activeCategory ? " active" : ""}`;
+    btn.textContent = label.charAt(0).toUpperCase() + label.slice(1);
+    btn.addEventListener("click", () => {
+      activeCategory = label;
+      renderCategoryFilters(allProducts);
+      renderFilteredProducts();
+    });
+    container.appendChild(btn);
+  });
+}
+
+function renderFilteredProducts() {
+  const q = searchQuery.trim().toLowerCase();
+  const filtered = allProducts.filter((p) => {
+    const category = (p.category || "").toLowerCase();
+    const matchesCategory = activeCategory === "all" || category === activeCategory;
+    const matchesSearch = !q ||
+      p.title.toLowerCase().includes(q) ||
+      p.description.toLowerCase().includes(q) ||
+      category.includes(q);
+    return matchesCategory && matchesSearch;
+  });
+  renderProducts(filtered);
+}
+
 // SEARCH
 function setupSearch() {
   const input = document.getElementById("search-input");
   if (!input) return;
 
   input.addEventListener("input", () => {
-    const q = input.value.toLowerCase();
-    const filtered = allProducts.filter((p) =>
-      p.title.toLowerCase().includes(q) ||
-      p.description.toLowerCase().includes(q) ||
-      (p.category && p.category.toLowerCase().includes(q))
-    );
-    renderProducts(filtered);
+    searchQuery = input.value || "";
+    renderFilteredProducts();
   });
 }
 
@@ -84,14 +134,23 @@ function setupCartUI() {
 
   checkoutForm.addEventListener("submit", async (e) => {
     e.preventDefault();
+    try {
+      const checkoutItems = cart.map((item) => ({ id: item.id, qty: item.qty }));
+      const res = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(checkoutItems)
+      });
 
-    const res = await fetch("/api/checkout", {
-      method: "POST",
-      body: JSON.stringify(cart)
-    });
-
-    const data = await res.json();
-    window.location = data.url; // Redirect to Stripe Checkout
+      const data = await res.json();
+      if (!res.ok || !data.url) {
+        throw new Error(data.error || "Checkout failed");
+      }
+      window.location = data.url; // Redirect to Stripe Checkout
+    } catch (error) {
+      console.error("Checkout failed:", error);
+      alert("Checkout could not be started. Please try again.");
+    }
   });
 }
 
@@ -152,7 +211,7 @@ function openProductModal(product) {
 
   modalTitle.textContent = product.title;
   modalDescription.textContent = product.description;
-  modalPrice.textContent = `$${product.price.toFixed(2)}`;
+  modalPrice.textContent = `$${Number(product.price || 0).toFixed(2)}`;
 
   modalAddCart.onclick = () => addToCart(product.id);
 
@@ -162,6 +221,16 @@ function openProductModal(product) {
 
   const media = [...(product.images || []), ...(product.videos || [])];
   totalSlides = media.length;
+  carouselLeft.style.display = totalSlides > 1 ? "inline-flex" : "none";
+  carouselRight.style.display = totalSlides > 1 ? "inline-flex" : "none";
+
+  if (totalSlides === 0) {
+    const fallback = document.createElement("p");
+    fallback.textContent = "No media available for this item.";
+    carouselTrack.appendChild(fallback);
+    modal.style.display = "flex";
+    return;
+  }
 
   media.forEach((src) => {
     let element;
@@ -227,6 +296,7 @@ carouselTrack.addEventListener("touchend", (e) => {
 
 // UPDATE CAROUSEL POSITION
 function updateCarousel() {
+  if (!totalSlides) return;
   carouselTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
 

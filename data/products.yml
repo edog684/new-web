@@ -1,31 +1,29 @@
 products:
   - id: item-1
-    title: "Pocket Torque Spinner"
-    description: "A compact precision spinner with textured grips and layered 3D details for satisfying fidget flow."
-    price: 12.49
+    title: "infinity cube"
+    description: "Fun infinite lapsing fidget"
+    price: 4.00
     category: "fidget"
     images:
       - "/images/_MG_4727.JPG"
       - "/images/_MG_4728.JPG"
       - "/images/_MG_4729.JPG"
     videos:
-      - "/images/GX010082.MP4"
+      - "/videos/GX010089.mp4"
 
   - id: item-2
-    title: "Minimal Carry Clip"
-    description: "A low-profile 3D printed carry clip built for secure everyday use and seamless pocket access."
-    price: 12.49
+    title: "Squishy rectangle"
+    description: "Fun stress-ball-like fidget."
+    price: 5.00
     category: "accessory"
     images:
       - "/images/_MG_4714.JPG"
-    videos:
-      - "/images/GX010083.MP4"
-      - "/images/GX010084.MP4"
+    videos: []
 
   - id: item-3
-    title: "Tactile Key Organizer"
-    description: "A durable key organizer with tactile ridges and a compact stacked design for quiet everyday carry."
-    price: 12.49
+    title: "4 clicker fidget"
+    description: "A smooth 4-click fidget with mechanical switches to soothe your clicking needs."
+    price: 8.00
     category: "accessory"
     images:
       - "/images/_MG_4717.JPG"
@@ -33,51 +31,53 @@ products:
       - "/images/_MG_4719.JPG"
       - "/images/_MG_4720.JPG"
     videos:
-      - "/images/GX010091.MP4"
+      - "/videos/GX010085.mp4"
+      - "/videos/GX010084.mp4"
+      - "/videos/GX010083.mp4"
+      - "/videos/GX010082.mp4"
 
   - id: item-4
-    title: "Balanced Desk Toy"
-    description: "A weighted desk toy that combines modern geometry with smooth motion and satisfying hand feel."
-    price: 12.49
+    title: "Squishy cube"
+    description: "Soothing soft squishy cube."
+    price: 5.00
     category: "home"
     images:
       - "/images/_MG_4712.JPG"
       - "/images/_MG_4713.JPG"
     videos:
-      - "/images/GX010085.MP4"
+      - "/videos/GX010091.mp4"
+      - "/videos/GX010090.mp4"
 
   - id: item-5
-    title: "Ridge Grip Fidget"
-    description: "A compact fidget tool with raised ridges for grip and stress relief during long work sessions."
-    price: 12.49
+    title: "2 clicker fidget"
+    description: "A smooth 2-click fidget with mechanical switches to soothe your clicking needs."
+    price: 4.00
     category: "fidget"
     images:
       - "/images/_MG_4723.JPG"
       - "/images/_MG_4724.JPG"
       - "/images/_MG_4725.JPG"
       - "/images/_MG_4726.JPG"
-    videos:
-      - "/images/GX010089.MP4"
+    videos: []
 
   - id: item-6
-    title: "Tool-Ready Pocket Insert"
-    description: "A precision insert designed for pocket organization and quick access to small tools."
-    price: 12.49
+    title: "1 clicker fidget"
+    description: "A smooth 1-click fidget with a mechanical switch to soothe your clicking needs."
+    price: 3.00
     category: "utility"
     images:
       - "/images/_MG_4730.JPG"
       - "/images/_MG_4731.JPG"
       - "/images/_MG_4732.JPG"
-    videos:
-      - "/images/GX010090.MP4"
+    videos: []
 
   - id: item-7
-    title: "Architectural Desk Accent"
-    description: "A sculptural desk accent with layered detail and a modern minimal profile."
-    price: 12.49
+    title: "Fidget cone"
+    description: "A small infinite looping fidget cone to slide through your day."
+    price: 5.00
     category: "home"
     images:
       - "/images/_MG_4721.JPG"
       - "/images/_MG_4722.JPG"
     videos:
-      - "/images/GX010086.MP4"
+      - "/videos/GX010086.mp4"
