@@ -9,7 +9,7 @@ products:
       - "/images/_MG_4728.JPG"
       - "/images/_MG_4729.JPG"
     videos:
-      - "/videos/GX010089.mp4"
+      - "/videos/GX010082.mp4"
 
   - id: item-2
     title: "Squishy rectangle"
@@ -18,7 +18,9 @@ products:
     category: "accessory"
     images:
       - "/images/_MG_4714.JPG"
-    videos: []
+    videos:
+      - "/videos/GX010083.mp4"
+      - "/videos/GX010084.mp4"
 
   - id: item-3
     title: "4 clicker fidget"
@@ -31,10 +33,7 @@ products:
       - "/images/_MG_4719.JPG"
       - "/images/_MG_4720.JPG"
     videos:
-      - "/videos/GX010085.mp4"
-      - "/videos/GX010084.mp4"
-      - "/videos/GX010083.mp4"
-      - "/videos/GX010082.mp4"
+      - "/videos/GX010091.mp4"
 
   - id: item-4
     title: "Squishy cube"
@@ -45,8 +44,7 @@ products:
       - "/images/_MG_4712.JPG"
       - "/images/_MG_4713.JPG"
     videos:
-      - "/videos/GX010091.mp4"
-      - "/videos/GX010090.mp4"
+      - "/videos/GX010085.mp4"
 
   - id: item-5
     title: "2 clicker fidget"
@@ -58,7 +56,8 @@ products:
       - "/images/_MG_4724.JPG"
       - "/images/_MG_4725.JPG"
       - "/images/_MG_4726.JPG"
-    videos: []
+    videos:
+      - "/videos/GX010089.mp4"
 
   - id: item-6
     title: "1 clicker fidget"
@@ -69,7 +68,8 @@ products:
       - "/images/_MG_4730.JPG"
       - "/images/_MG_4731.JPG"
       - "/images/_MG_4732.JPG"
-    videos: []
+    videos:
+      - "/videos/GX010090.mp4"
 
   - id: item-7
     title: "Fidget cone"
